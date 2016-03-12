@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>YaminLi_ProjC</title>
+    <style type="text/css">
+      #content
+      {
+        font-family: "Georgia";
+        font-style: oblique;
+        position: absolute;
+        color: red;
+        left: 30px;
+        top: 20px;
+      }
+    </style>
+  </head>
+
+  <body onload="main()" onresize="winResize()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+   
+    <p>
+      <div id="content"><b>User Instruction (Press F1)</b></div>
+      <div id="content">
+        <div id= Help></div>
+    </p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-mod.js"></script>
+    <script type="text/javascript" src="../lib/DAT.GUI.min.js"></script>
+    <script src="materials_Ayerdi.js"></script>
+    <script src="lights-JT.js"></script>
+    <script src="YaminLi_ProjC.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple Solar System</title>
+    <style type="text/css">
+      #content
+      {
+        position: absolute;
+        top: 6px;
+        left: 720px;
+        color: red;
+        background: black;
+      }
+      #content1
+      {
+        position: absolute;
+        top: 300px;
+        left: 720px;
+        color: white;
+        background: black;
+      }
+    </style>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="700" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+  <div id="content">
+    <p id="Instruction"> </p>
+  </div>
+  <div id="content1">
+    <p id="Detail"> </p>
+  </div>
+  <p>
+    <button type="button" onclick="spinDown()">Spin << </button>
+    <button type="button" onclick="runStop()"> Run/Stop</button>
+    <button type="button" onclick="spinUp()">Spin >> </button>
+  </p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-mod.js"></script>
+    <script src="YaminLi_ProjA.js"></script>
+  </body>
+</html>

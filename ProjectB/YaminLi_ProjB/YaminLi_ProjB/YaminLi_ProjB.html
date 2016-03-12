@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>YaminLi_ProjB</title>
+    <style type="text/css">
+      #content
+      {
+        color: purple;
+      }
+    </style>
+  </head>
+
+  <body onload="main()" onresize="winResize()">
+    <canvas id="webgl" width="600" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+      <button type="button" onclick="spinDown()">Spin << </button>
+      <button type="button" onclick="runStop()"> Run/Stop</button>
+      <button type="button" onclick="spinUp()">Spin >> </button>
+    </p>
+    <p>
+      <div id="content"><b>User Instruction</b></div>
+      <div id="content"><b>(Mac: F1 + fn; Windows: F1)</b></div>
+      <div id="content">
+        <div id= Help></div>
+      </div>
+    </p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-mod.js"></script>
+    <script src="YaminLi_ProjB.js"></script>
+  </body>
+</html>
